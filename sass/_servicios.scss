@@ -1,0 +1,96 @@
+$full-W: 100vw;
+
+.servicios {
+    display: flex;
+  
+    &__container { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+        width: 100vw;
+        color: $color;
+
+        @include web {
+
+            height: 64rem;
+        }
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        &--btn {
+            padding: 2px;
+            color: $azul;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background: $azul;
+            
+        
+        }
+        &__box--izq{
+            background-image: url(/img/curso-online-mecanico-bicicletas_amp_primaria_1_1560503049.jpg);
+            transition: 2s  ease-out ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+            &:hover{
+                background-image: url(/img/images.jpg);
+            }
+        }
+        &__box--izq, &__box--cnt, &__box--der{
+           
+            display: flex;
+            justify-content:center;
+            width: 100%;
+            text-align: start;
+            background-color: $amarillo;
+            box-shadow: 1px 0px 3px $amarillo;
+
+                @include web {
+                    flex-direction: column;
+                    width: $full-W;
+                    
+                    border: 1px solid $color;
+                   box-shadow: none;
+
+                      
+                }
+                @include tablet{
+                    flex-direction: column;
+                    width: $full-W;
+                    height: 40vh;
+                    border: 1px solid $color;
+                    padding: 3rem;
+                   box-shadow: none;
+                }
+                &--btn {
+
+                    padding: 12px;
+                    color: $azul;
+                    width: 25%;
+                    border: none;
+                    outline: none;
+                    border-radius: 4px;
+                    background: $color;
+                    
+                    &:hover {
+                        transition: all 0.2s ease ;
+                        color: $amarillo;
+                        box-shadow: 0.5px 0.5px 2px $color;
+                    }
+                }
+               
+        }
+        
+       
+    }
+}
+
+
+
+

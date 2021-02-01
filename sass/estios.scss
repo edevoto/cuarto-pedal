@@ -1,0 +1,89 @@
+@import "_navbar";
+@import "_colors";
+@import "_media-q";
+@import "_servicios";
+@import "_blog";
+@import "_footer";
+$full-W: 100vw;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  box-sizing: border-box;
+}
+body {
+  //background-image: linear-gradient(to bottom, #223547, #586171, #8f929e, #c7c7cd, #ffffff);
+  //background-image: linear-gradient(to bottom,  $azul, #34516b);
+  
+  overflow-x: hidden;
+
+}
+//hero Section css
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+
+  .bg-div{
+    text-align: center;
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(150deg, #223547e5,   #313941);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+      height: 17vh;
+      width: 25vw;
+      z-index: 9;
+      top: 70%;
+      left: 64%;
+      border-radius:  10px;
+      box-shadow: 8px 8px 10px -2px #141f2afd,
+      -2px -5px 8px -1px #a9a8a8af;
+    h1{
+      font-size: 2rem;
+      margin: 2% auto 2% ;
+      color: $amarillo;
+    }
+    .top2{
+      width: 200px;
+      top: 60%;
+      left: 70%;
+      background-color: $color-boton;
+      color: $azul;
+      overflow: hidden; 
+      opacity: 0.8;
+      transition: .5s;
+      box-shadow: 2px 4px 8px -1px #141f2afd,
+      -2px -2px 7px -4px #e7e5de;
+      &:hover{
+        background-color: $amarillo;
+      }
+      &::before{
+        content: 'Contactanos';
+      }
+      &:hover::before{
+        display: none;
+        transition: .5s;
+      }
+      &:hover::after {
+        content: 'Click Aqui';
+        color: $color;
+        transition: .5s;
+        
+    }
+      
+  }
+  
+}
+
+.parallax-completo{
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+}

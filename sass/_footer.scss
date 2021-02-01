@@ -1,0 +1,32 @@
+@import "_colors";
+@import "_media-q";
+
+footer{
+     .footer__logo--img{
+        height: 280px;
+        width: 300px;
+        @include tablet{
+            display: none;
+        }
+    }
+    div{
+    a{
+        color: $color;
+        text-decoration: none;
+        &:hover{
+            color: $amarillo!important;
+        }
+    }
+    
+}
+} 
+
+.bg-azul{
+    background-image: linear-gradient( 85deg, #223547,   #31475a);
+    }
+
+.titulo-amarillo{
+    color: $amarillo!important;
+  
+    
+}

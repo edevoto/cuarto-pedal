@@ -1,0 +1,423 @@
+.navbar {
+  margin-top: 2%;
+  height: 15vh;
+  z-index: 10;
+}
+
+.navbar .navbar-bg-color {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 2rem;
+  margin-bottom: 2%;
+  color: #ffffff;
+}
+
+.navbar .navbar-bg-color .color-icono {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar .navbar-bg-color .color-icono {
+    color: #FDD04B !important;
+  }
+}
+
+.navbar .navbar-bg-color .text-color-navbar {
+  color: #FDD04B !important;
+}
+
+.navbar .navbar-bg-color .text-color-navbar:hover {
+  color: #ffffff !important;
+}
+
+.navbar .navbar-bg-color .text-color-navbar .border-azul {
+  display: inline;
+  text-shadow: -1px -1px 2px #312d2d, 1px 1px 2px #223547;
+}
+
+@media screen and (min-width: 500px) {
+  .navbar .navbar-bg-color .text-color-navbar .border-azul {
+    display: inline;
+    font-size: 1rem;
+    color: #FDD04B;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar .navbar-bg-color .text-color-navbar .border-azul {
+    font-size: 1rem;
+    padding: 10px;
+    display: none;
+  }
+}
+
+.navbar .navbar-bg-color .text-color-navbar .border-azul:hover {
+  border-bottom: 3px solid #223547;
+  border-radius: 6px;
+}
+
+.navbar__logo--img {
+  height: 180px;
+  width: 190px;
+  background-color: #223547af;
+  border-radius: 999px;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar__logo--img {
+    margin-right: 0px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.servicios__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100vw;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1400px) {
+  .servicios__container {
+    height: 64rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .servicios__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.servicios__container--btn {
+  padding: 2px;
+  color: #223547;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #223547;
+}
+
+.servicios__container__box--izq {
+  background-image: url(/img/curso-online-mecanico-bicicletas_amp_primaria_1_1560503049.jpg);
+  -webkit-transition: 2s  ease-out;
+  transition: 2s  ease-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.servicios__container__box--izq:hover {
+  background-image: url(/img/images.jpg);
+}
+
+.servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: start;
+  background-color: #FDD04B;
+  -webkit-box-shadow: 1px 0px 3px #FDD04B;
+          box-shadow: 1px 0px 3px #FDD04B;
+}
+
+@media screen and (min-width: 1400px) {
+  .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 40vh;
+    border: 1px solid #ffffff;
+    padding: 3rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.servicios__container__box--izq--btn, .servicios__container__box--cnt--btn, .servicios__container__box--der--btn {
+  padding: 12px;
+  color: #223547;
+  width: 25%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.servicios__container__box--izq--btn:hover, .servicios__container__box--cnt--btn:hover, .servicios__container__box--der--btn:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #FDD04B;
+  -webkit-box-shadow: 0.5px 0.5px 2px #ffffff;
+          box-shadow: 0.5px 0.5px 2px #ffffff;
+}
+
+.container {
+  margin-top: 15px;
+  padding: 0;
+  display: block;
+  position: relative;
+  top: 50px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #FDD04B;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 5px #2e2e2e;
+          box-shadow: 1px 2px 5px #2e2e2e;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 100%;
+    height: 500px;
+    opacity: 0.9;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    display: none;
+  }
+}
+
+.container__items {
+  border-radius: 3px;
+  width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #223547;
+  color: #FDD04B;
+}
+
+.container__items a {
+  color: #FDD04B;
+  text-decoration: underline;
+}
+
+.container__items a:hover {
+  background-color: #FDD04B;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.container__text {
+  padding-top: 15px;
+  color: #ffffff;
+}
+
+.container__text h4 {
+  margin: 0;
+  padding: 0;
+  color: #223547;
+}
+
+.container__text--bioUno img {
+  height: 500px;
+  padding-bottom: 3rem;
+}
+
+.container__text--bioUno p {
+  margin-top: 10rem;
+  width: 50%;
+  float: right;
+}
+
+.container__text--bioDos img {
+  height: 60vh;
+  float: right;
+  padding-bottom: 3rem;
+}
+
+.container__text--bioDos p {
+  margin-top: 10rem;
+  width: 30%;
+}
+
+.container__text--bioTaller {
+  margin-top: 3rem;
+}
+
+.container-blog {
+  background-image: url(/img/curso-online-mecanico-bicicletas_amp_primaria_1_1560503049.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media screen and (min-width: 1400px) {
+  .container-blog {
+    margin: 0;
+    padding: 0 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container-blog {
+    display: none;
+  }
+}
+
+footer .footer__logo--img {
+  height: 280px;
+  width: 300px;
+}
+
+@media screen and (max-width: 1400px) {
+  footer .footer__logo--img {
+    display: none;
+  }
+}
+
+footer div a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer div a:hover {
+  color: #FDD04B !important;
+}
+
+.bg-azul {
+  background-image: linear-gradient(85deg, #223547, #31475a);
+}
+
+.titulo-amarillo {
+  color: #FDD04B !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-attachment: fixed;
+}
+
+.video .bg-div {
+  text-align: center;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(150deg, #223547e5, #313941);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 17vh;
+  width: 25vw;
+  z-index: 9;
+  top: 70%;
+  left: 64%;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 10px -2px #141f2afd, -2px -5px 8px -1px #a9a8a8af;
+          box-shadow: 8px 8px 10px -2px #141f2afd, -2px -5px 8px -1px #a9a8a8af;
+}
+
+.video .bg-div h1 {
+  font-size: 2rem;
+  margin: 2% auto 2%;
+  color: #FDD04B;
+}
+
+.video .bg-div .top2 {
+  width: 200px;
+  top: 60%;
+  left: 70%;
+  background-color: #e2dfdf;
+  color: #223547;
+  overflow: hidden;
+  opacity: 0.8;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 2px 4px 8px -1px #141f2afd, -2px -2px 7px -4px #e7e5de;
+          box-shadow: 2px 4px 8px -1px #141f2afd, -2px -2px 7px -4px #e7e5de;
+}
+
+.video .bg-div .top2:hover {
+  background-color: #FDD04B;
+}
+
+.video .bg-div .top2::before {
+  content: 'Contactanos';
+}
+
+.video .bg-div .top2:hover::before {
+  display: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.video .bg-div .top2:hover::after {
+  content: 'Click Aqui';
+  color: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.video .parallax-completo {
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=estios.css.map */
