@@ -44,6 +44,9 @@
       height: 100px;
       margin-top: 1rem; } }
 
+.navbar__logo--img {
+  display: none; }
+
 .servicios {
   display: flex; }
   .servicios__container {
