@@ -2,15 +2,31 @@
   margin-top: 2%;
   height: 15vh;
   z-index: 10; }
+  @media screen and (max-width: 1400px) {
+    .navbar .color-icono {
+      color: #FDD04B !important; } }
+  @media screen and (max-width: 600px) {
+    .navbar .navbar-toggler-icon {
+      background-image: url(/img/logo.png);
+      width: 80px;
+      height: 80px; } }
+  .navbar .dropdown-menu a {
+    font-size: 0.7rem; }
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    background-color: #FDD04B;
+    width: 200px; }
+    @media screen and (max-width: 600px) {
+      .navbar .dropdown:hover > .dropdown-menu {
+        display: none; } }
+  .navbar .dropdown > .dropdown-toggle:active {
+    pointer-events: none; }
   .navbar .navbar-bg-color {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-right: 2rem;
     margin-bottom: 2%;
     color: #ffffff; }
-  @media screen and (max-width: 1400px) {
-    .navbar .color-icono {
-      color: #FDD04B !important; } }
   .navbar .text-color-navbar {
     color: #FDD04B !important; }
     .navbar .text-color-navbar:hover {
@@ -18,16 +34,16 @@
     .navbar .text-color-navbar .border-azul {
       display: inline;
       text-shadow: -1px -1px 2px #312d2d, 1px 1px 2px #223547; }
-      @media screen and (min-width: 500px) {
+      @media screen and (max-width: 600px) {
         .navbar .text-color-navbar .border-azul {
           display: inline;
           font-size: 1rem;
-          color: #FDD04B; } }
+          color: #FDD04B;
+          display: block; } }
       @media screen and (max-width: 1400px) {
         .navbar .text-color-navbar .border-azul {
           font-size: 1rem;
-          padding: 10px;
-          display: none; } }
+          padding: 10px; } }
       .navbar .text-color-navbar .border-azul:hover {
         border-bottom: 3px solid #223547;
         border-radius: 6px; }
@@ -35,25 +51,33 @@
 .navbar__logo--img {
   height: 190px;
   width: 190px;
+  display: block;
   background-color: #223547af;
-  border-radius: 999px; }
+  border-radius: 999px;
+  margin-top: 0.3rem; }
+  @media screen and (max-width: 1600px) {
+    .navbar__logo--img {
+      margin-top: 3rem; } }
   @media screen and (max-width: 1400px) {
     .navbar__logo--img {
+      display: flex;
       margin-right: 0px;
       width: 100px;
       height: 100px;
       margin-top: 1rem; } }
+  @media screen and (max-width: 600px) {
+    .navbar__logo--img {
+      display: none; } }
 
 .servicios {
   display: flex; }
   .servicios__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 100%;
-    width: 100vw;
+    height: 70%;
     color: #ffffff; }
     @media screen and (min-width: 1400px) {
       .servicios__container {
@@ -61,51 +85,35 @@
     @media screen and (max-width: 1400px) {
       .servicios__container {
         flex-direction: column; } }
-    .servicios__container--btn {
-      padding: 2px;
-      color: #223547;
-      border: none;
-      outline: none;
-      border-radius: 4px;
-      background: #223547; }
     .servicios__container__box--izq {
       background-image: url(/img/curso-online-mecanico-bicicletas_amp_primaria_1_1560503049.jpg);
       transition: 2s  ease-out;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 70vh; }
-      .servicios__container__box--izq:hover {
-        background-image: url(/img/images.jpg); }
-    .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
-      display: flex;
+      height: 70vh;
       justify-content: center;
-      width: 100%;
-      text-align: start;
-      background-color: #FDD04B;
-      box-shadow: 1px 0px 3px #FDD04B; }
+      width: 200px;
+      text-align: start; }
       @media screen and (min-width: 1400px) {
-        .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
-          flex-direction: column;
-          width: 100vw;
+        .servicios__container__box--izq {
           border: 1px solid #ffffff;
           box-shadow: none; } }
       @media screen and (max-width: 1400px) {
-        .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
+        .servicios__container__box--izq {
           flex-direction: column;
           width: 100vw;
           height: 40vh;
           border: 1px solid #ffffff;
           padding: 3rem;
           box-shadow: none; } }
-      .servicios__container__box--izq--btn, .servicios__container__box--cnt--btn, .servicios__container__box--der--btn {
+      .servicios__container__box--izq--btn {
         padding: 12px;
         color: #223547;
-        width: 25%;
         border: none;
         outline: none;
         border-radius: 4px;
         background: #ffffff; }
-        .servicios__container__box--izq--btn:hover, .servicios__container__box--cnt--btn:hover, .servicios__container__box--der--btn:hover {
+        .servicios__container__box--izq--btn:hover {
           transition: all 0.2s ease;
           color: #FDD04B;
           box-shadow: 0.5px 0.5px 2px #ffffff; }
@@ -216,26 +224,52 @@ body {
   justify-content: center;
   align-items: center;
   background-attachment: fixed; }
-  .video .bg-div {
+  .video .bg-card {
     text-align: center;
     display: block;
     position: absolute;
     background-image: linear-gradient(150deg, #223547e5, #313941);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    height: 17vh;
+    height: 40vh;
     width: 25vw;
     z-index: 9;
-    top: 70%;
+    top: 50%;
     left: 64%;
     border-radius: 10px;
     box-shadow: 8px 8px 10px -2px #141f2afd, -2px -5px 8px -1px #a9a8a8af; }
-    .video .bg-div h1 {
+    .video .bg-card:hover {
+      background-color: #363b41f6; }
+    @media screen and (max-width: 1600px) {
+      .video .bg-card {
+        height: 43vh;
+        top: 48%; } }
+    @media screen and (max-width: 1400px) {
+      .video .bg-card {
+        height: 28vh; } }
+    @media screen and (max-width: 600px) {
+      .video .bg-card {
+        background-image: linear-gradient(150deg, #22354700, #31394100);
+        box-shadow: none;
+        width: 150px;
+        left: 62%; }
+        .video .bg-card:hover {
+          background-color: #363b4100; } }
+    .video .bg-card h3 {
       font-size: 2rem;
-      margin: 2% auto 2%;
+      margin: 10% auto 2%;
+      color: #ffffff; }
+      @media screen and (max-width: 1400px) {
+        .video .bg-card h3 {
+          font-size: 1rem;
+          margin: 5% auto 2%; } }
+    .video .bg-card h4 {
+      font-size: 3rem;
+      margin: 10% auto 2%;
       color: #FDD04B; }
-    .video .bg-div .top2 {
+      @media screen and (max-width: 1400px) {
+        .video .bg-card h4 {
+          font-size: 1.5rem; } }
+    .video .bg-card .top2 {
       width: 200px;
       top: 60%;
       left: 70%;
@@ -245,18 +279,30 @@ body {
       opacity: 0.8;
       transition: .5s;
       box-shadow: 2px 4px 8px -1px #141f2afd, -2px -2px 7px -4px #e7e5de; }
-      .video .bg-div .top2:hover {
+      .video .bg-card .top2:hover {
         background-color: #FDD04B; }
-      .video .bg-div .top2::before {
+      .video .bg-card .top2::before {
         content: 'Contactanos'; }
-      .video .bg-div .top2:hover::before {
+      .video .bg-card .top2:hover::before {
         display: none;
         transition: .5s; }
-      .video .bg-div .top2:hover::after {
+      .video .bg-card .top2:hover::after {
         content: 'Click Aqui';
         color: #ffffff;
         transition: .5s; }
+      @media screen and (max-width: 1400px) {
+        .video .bg-card .top2 {
+          width: 170px; } }
+      @media screen and (max-width: 600px) {
+        .video .bg-card .top2 {
+          width: 130px;
+          font-size: 0.9rem; } }
   .video .parallax-completo {
     width: 100%;
     height: 100vh;
     background-attachment: fixed; }
+
+.marcas-bg {
+  background-image: url(/img/cris&bike.JPG);
+  background-repeat: space;
+  background-size: contain; }
