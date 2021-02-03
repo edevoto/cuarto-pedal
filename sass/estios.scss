@@ -119,13 +119,28 @@ body {
 
 .parallax-completo{
   width: 100%;
-  height: 100vh;
   background-attachment: fixed;
 }
 }
 
-.marcas-bg{
-  background-image: url(/img/cris&bike.JPG);
-  background-repeat: space;
-  background-size: contain;
+
+.motivation{
+  height: 80vh;
+}
+.slider-texto{
+  display: block;
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  left: 8%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 5rem;
+  color: $color;
+  opacity: 0.8;
+  @include tablet {
+    font-size: 2rem;
+    top: 45%;
+  }
+  
 }

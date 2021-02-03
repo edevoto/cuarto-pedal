@@ -23,7 +23,7 @@ $full-W: 100vw;
 
       
         &__box--izq{
-            background-image: url(/img/curso-online-mecanico-bicicletas_amp_primaria_1_1560503049.jpg);
+            
             transition: 2s  ease-out ;
             background-repeat: no-repeat;
             background-size: cover;
@@ -31,7 +31,18 @@ $full-W: 100vw;
             justify-content:center;
             width: 200px;
             text-align: start;
-
+            .bg-uno{
+                background-image: url(/img/servi1.jpg)!important;
+                background-size: cover;
+                
+            }
+            .bg-dos{
+                background-image: url(/img/servi2.jpg);
+                background-size: cover;
+            }
+            .bg-tres{
+                background-color: rebeccapurple;
+            }
                 @include web {
                     
                     border: 1px solid $color;

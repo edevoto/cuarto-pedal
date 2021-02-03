@@ -13,9 +13,9 @@
        }
   .navbar-toggler-icon{
     @include mobile{
-      background-image:url(/img/logo.png);
-      width: 80px;
-      height: 80px;
+      background-image:url(/img/Asset7.png);
+      width: 50px;
+      height: 60px;
   }
 }
   .dropdown-menu a{
@@ -88,12 +88,12 @@
   }
 
   .navbar__logo--img {  
-    height: 190px;
-    width: 190px;
-    display: block;
-    background-color: #223547af;
+    height: 89px!important;
+    width: 90px!important;
+    margin-bottom: 3rem!important;
+    margin-left: 2rem;
+    background-color: #223547;
     border-radius: 999px;
-    margin-top: 0.3rem;
 
     @include web-small{
       margin-top: 3rem;
@@ -103,7 +103,6 @@
       margin-right: 0px;
       width: 100px;
       height: 100px;
-      margin-top: 1rem;
     }
     @include mobile {
       display: none;
