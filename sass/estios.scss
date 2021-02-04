@@ -67,7 +67,7 @@ body {
         background-image: linear-gradient(150deg, #22354700,   #31394100);
         box-shadow: none;
         width: 150px;
-        left: 62%;
+        left: 42%;
         &:hover{
           background-color: #363b4100;
         }
@@ -122,11 +122,12 @@ body {
     }
       @include tablet{
         width: 170px;
+        
       }
       @include mobile {
         width: 130px;
         font-size: 0.9rem;
-  }
+         }
   }
   
   

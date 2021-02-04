@@ -9,7 +9,7 @@ $full-W: 100vw;
    display: flex;
    flex-wrap: wrap;
    position: static;
-   box-shadow: 1px 2px 10px -1px #141f2afd,
+   box-shadow: 2px 2px 10px -1px #141f2afd,
    -1px -1px 7px -4px #e7e5de;
     .bg-uno {
         width: 33.3%;
@@ -28,7 +28,11 @@ $full-W: 100vw;
             color: $amarillo;
             margin-top: 6rem;
             text-decoration: underline;
-            text-shadow: -1px -1px  2px #312d2d,
+            text-shadow: 1px 1px  2px #312d2d;
+            @include tablet-small{
+                margin-top: 1rem;
+            }
+
         }
     }
     .bg-dos {
@@ -48,7 +52,11 @@ $full-W: 100vw;
             color: $amarillo;
             margin-top: 5.5rem;
             text-decoration: underline;
-            text-shadow: -1px -1px  2px #312d2d,
+            text-shadow: 1px 1px  2px #312d2d;
+            
+            @include tablet-small{
+                margin-top: 1rem;
+            }
         }
     }
     .bg-tres {
@@ -67,7 +75,10 @@ $full-W: 100vw;
             color: $amarillo;
             margin-top: 6rem;
             text-decoration: underline;
-            text-shadow: -1px -1px  2px #312d2d,
+            text-shadow: 1px 1px  2px #312d2d;
+            @include tablet-small{
+                margin-top: 1rem;
+            }
         }
     }
     

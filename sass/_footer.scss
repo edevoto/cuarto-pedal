@@ -2,6 +2,8 @@
 @import "_media-q";
 
 footer{
+
+    
      .fas{
          @include mobile {
              display: none;
@@ -23,7 +25,15 @@ footer{
 
 .bg-azul{
     background-image: linear-gradient( 85deg, #223547,   #31475a);
-  
+    
+    .row {
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
     }
 
 .titulo-amarillo{

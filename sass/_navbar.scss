@@ -2,9 +2,9 @@
 @import "_media-q";
 
 .navbar {
-  margin-top: 2%;
   height: 15vh;
-  z-index: 10; 
+  z-index: 10;
+  margin-top: 2%; 
   @include web-small{
     margin-top: 1%;
   } 
@@ -16,15 +16,14 @@
     }
        }
   .navbar-toggler-icon{
-    @include tablet{
-      background-image: url('../img/Asset7.png');
-      border-radius: 999px;
-    }
+
+   
     @include mobile{
       background-image: url('../img/Asset7.png');
       border-radius: 999px;
-      width: 50px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
+      outline: none;
   }
 }
   .dropdown-menu a{
@@ -42,6 +41,7 @@
   .dropdown>.dropdown-toggle:active {
     pointer-events: none;
   }
+
   .navbar-bg-color {
     //background-image: linear-gradient(to right, #22354778,   #3a3e4149);
     border-top-left-radius: 10px;
@@ -52,8 +52,6 @@
     }
 
 
-  
-    
    
     .text-color-navbar {
       color: $amarillo !important;
@@ -70,10 +68,8 @@
          
         @include mobile {
 
-          display: inline;
           font-size: 1rem;
           color: $amarillo;
-          display: block;
 
         }
 
@@ -108,7 +104,6 @@
       margin-top: 3rem;
     }
     @include tablet {
-      display: none;
       margin-right: 0px;
       width: 100px;
       height: 100px;
