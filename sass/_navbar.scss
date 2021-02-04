@@ -4,16 +4,25 @@
 .navbar {
   margin-top: 2%;
   height: 15vh;
-  z-index: 10;  
+  z-index: 10; 
+  @include web-small{
+    margin-top: 1%;
+  } 
   @include tablet {
-
+    
+      margin-top: 1%;
       .color-icono{
       color: $amarillo!important;
     }
        }
   .navbar-toggler-icon{
+    @include tablet{
+      background-image: url('../img/Asset7.png');
+      border-radius: 999px;
+    }
     @include mobile{
-      background-image:url(/img/Asset7.png);
+      background-image: url('../img/Asset7.png');
+      border-radius: 999px;
       width: 50px;
       height: 60px;
   }
@@ -99,7 +108,7 @@
       margin-top: 3rem;
     }
     @include tablet {
-      display: flex;
+      display: none;
       margin-right: 0px;
       width: 100px;
       height: 100px;

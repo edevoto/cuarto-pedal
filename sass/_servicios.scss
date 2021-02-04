@@ -1,9 +1,108 @@
 $full-W: 100vw;
 
-.servicios {
-    display: flex;
+.servicios-home {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    height: 55vh;
+    color: $color;
+   display: flex;
+   flex-wrap: wrap;
+   position: static;
+   box-shadow: 1px 2px 10px -1px #141f2afd,
+   -1px -1px 7px -4px #e7e5de;
+    .bg-uno {
+        width: 33.3%;
+        background-image: url('../img/servi2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
 
-    &__container { 
+        &:hover{
+            transform: scale(1.1);
+            transition: .5s ease;
+            padding-left: 3rem;
+            border: 3px solid $color;
+            z-index: 9;
+        }
+        .serv-text {
+            color: $amarillo;
+            margin-top: 6rem;
+            text-decoration: underline;
+            text-shadow: -1px -1px  2px #312d2d,
+        }
+    }
+    .bg-dos {
+        
+        width: 33.3%;
+        background-image: url('../img/servi1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+        &:hover{
+           transition: .5s ease;
+            transform: scale(1.1);
+            border: 3px solid $color;
+            z-index: 9;
+        }
+        .serv-text {
+            color: $amarillo;
+            margin-top: 5.5rem;
+            text-decoration: underline;
+            text-shadow: -1px -1px  2px #312d2d,
+        }
+    }
+    .bg-tres {
+        width: 33.3%;
+        background-image: url('../img/4p_van.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 0px;
+        &:hover{
+            transition: .5s ease;
+            transform: scale(1.1);
+            border: 3px solid $color;
+            z-index: 9;
+        }
+        .serv-text {
+            color: $amarillo;
+            margin-top: 6rem;
+            text-decoration: underline;
+            text-shadow: -1px -1px  2px #312d2d,
+        }
+    }
+    
+
+
+
+    &--btn {
+                  
+        padding: 12px;
+        color: $azul;
+        
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: $color;
+        
+        &:hover {
+            transition: all 0.2s ease ;
+            color: $amarillo;
+            box-shadow: 0.5px 0.5px 2px $color;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*&__container { 
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -23,7 +122,8 @@ $full-W: 100vw;
 
       
         &__box--izq{
-            
+            background-image: url(/img/servi1.jpg)!important;
+            background-size: cover;
             transition: 2s  ease-out ;
             background-repeat: no-repeat;
             background-size: cover;
@@ -31,18 +131,7 @@ $full-W: 100vw;
             justify-content:center;
             width: 200px;
             text-align: start;
-            .bg-uno{
-                background-image: url(/img/servi1.jpg)!important;
-                background-size: cover;
-                
-            }
-            .bg-dos{
-                background-image: url(/img/servi2.jpg);
-                background-size: cover;
-            }
-            .bg-tres{
-                background-color: rebeccapurple;
-            }
+           
                 @include web {
                     
                     border: 1px solid $color;
@@ -76,11 +165,93 @@ $full-W: 100vw;
                 }
                
         }
-        
-       
-    }
+        &__box--cnt{
+            background-image: url(/img/servi2.jpg);
+            background-size: cover;
+            transition: 2s  ease-out ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+            justify-content:center;
+            text-align: start;
+           
+                @include web {
+                    
+                    
+                   box-shadow: none;
+
+                      
+                }
+                @include tablet{
+                    flex-direction: column;
+                    width: $full-W;
+                    height: 40vh;
+                    border: 1px solid $color;
+                    padding: 3rem;
+                   box-shadow: none;
+                }
+                &--btn {
+                  
+                    padding: 12px;
+                    color: $azul;
+                    
+                    border: none;
+                    outline: none;
+                    border-radius: 4px;
+                    background: $color;
+                    
+                    &:hover {
+                        transition: all 0.2s ease ;
+                        color: $amarillo;
+                        box-shadow: 0.5px 0.5px 2px $color;
+                    }
+                }
+               
+        }
+        &__box--der{
+            background-image: url(/img/camion.svg);
+            background-size: contain;
+            transition: 2s  ease-out ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+            justify-content:center;
+          
+            text-align: start;
+           
+                @include web {
+                    
+                    border: 1px solid $color;
+                   box-shadow: none;
+
+                      
+                }
+                @include tablet{
+                    flex-direction: column;
+                    width: $full-W;
+                    height: 40vh;
+                    border: 1px solid $color;
+                    padding: 3rem;
+                   box-shadow: none;
+                }
+                &--btn {
+                  
+                    padding: 12px;
+                    color: $azul;
+                    
+                    border: none;
+                    outline: none;
+                    border-radius: 4px;
+                    background: $color;
+                    
+                    &:hover {
+                        transition: all 0.2s ease ;
+                        color: $amarillo;
+                        box-shadow: 0.5px 0.5px 2px $color;
+                    }
+                }
+               
+        }
+    }*/
+    
 }
-
-
-
-
