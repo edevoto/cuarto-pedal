@@ -39,7 +39,9 @@ footer{
 .titulo-amarillo{
     color: $amarillo!important;
     font-size: 1.5rem;
-    
+    @include mobile {
+        font-size: 1rem;
+    }
 }
 .text-secondary{
     font-size: 0.5rem;

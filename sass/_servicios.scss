@@ -11,16 +11,17 @@ $full-W: 100vw;
    position: static;
    box-shadow: 2px 2px 10px -1px #141f2afd,
    -1px -1px 7px -4px #e7e5de;
+  
     .bg-uno {
         width: 33.3%;
         background-image: url('../img/servi2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-
+     
         &:hover{
             transform: scale(1.1);
             transition: .5s ease;
-            padding-left: 3rem;
+            padding-left: 1rem;
             border: 3px solid $color;
             z-index: 9;
         }
@@ -65,6 +66,7 @@ $full-W: 100vw;
         background-repeat: no-repeat;
         background-size: cover;
         margin-right: 0px;
+       
         &:hover{
             transition: .5s ease;
             transform: scale(1.1);

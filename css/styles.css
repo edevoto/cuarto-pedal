@@ -1,7 +1,10 @@
 .navbar {
-  height: 15vh;
-  z-index: 10;
-  margin-top: 2%; }
+  height: 11vh !important;
+  background-image: linear-gradient(85deg, #223547, #31475a);
+  align-items: center; }
+  @media screen and (max-width: 600px) {
+    .navbar {
+      height: 59px !important; } }
   @media screen and (max-width: 1600px) {
     .navbar {
       margin-top: 1%; } }
@@ -10,13 +13,28 @@
       margin-top: 1%; }
       .navbar .color-icono {
         color: #FDD04B !important; } }
+  @media screen and (max-width: 1400px) and (max-width: 600px) {
+    .navbar .fas, .navbar .far {
+      display: none; } }
+  @media screen and (max-width: 1400px) and (max-width: 1400px) {
+    .navbar .fas, .navbar .far {
+      display: none; } }
+  .navbar .navbar-toggler-icon {
+    outline: none; }
+    @media screen and (max-width: 600px) {
+      .navbar .navbar-toggler-icon {
+        background-image: url("../img/logo1.png");
+        width: 40px;
+        height: 40px; } }
+  @media screen and (max-width: 1400px) {
+    .navbar .navbar-nav {
+      margin-top: 0rem;
+      margin-left: 0px;
+      padding-left: 1rem; } }
   @media screen and (max-width: 600px) {
-    .navbar .navbar-toggler-icon {
-      background-image: url("../img/Asset7.png");
-      border-radius: 999px;
-      width: 40px;
-      height: 40px;
-      outline: none; } }
+    .navbar .navbar-nav {
+      margin-top: 0px;
+      margin-left: 0px; } }
   .navbar .dropdown-menu a {
     font-size: 0.7rem; }
   .navbar .dropdown:hover > .dropdown-menu {
@@ -28,28 +46,20 @@
         display: none; } }
   .navbar .dropdown > .dropdown-toggle:active {
     pointer-events: none; }
-  .navbar .navbar-bg-color {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-right: 2rem;
-    margin-bottom: 2%;
-    color: #ffffff; }
   .navbar .text-color-navbar {
     color: #FDD04B !important; }
     .navbar .text-color-navbar:hover {
       color: #ffffff !important; }
-    .navbar .text-color-navbar .border-azul {
-      display: inline;
+    .navbar .text-color-navbar .nav-text {
       text-shadow: -1px -1px 2px #312d2d, 1px 1px 2px #223547; }
-      @media screen and (max-width: 600px) {
-        .navbar .text-color-navbar .border-azul {
-          font-size: 1rem;
-          color: #FDD04B; } }
       @media screen and (max-width: 1400px) {
-        .navbar .text-color-navbar .border-azul {
-          font-size: 1rem;
-          padding: 10px; } }
-      .navbar .text-color-navbar .border-azul:hover {
+        .navbar .text-color-navbar .nav-text {
+          font-size: 1rem; } }
+      @media screen and (max-width: 600px) {
+        .navbar .text-color-navbar .nav-text {
+          font-size: 10px;
+          color: #FDD04B; } }
+      .navbar .text-color-navbar .nav-text:hover {
         border-bottom: 3px solid #223547;
         border-radius: 6px; }
 
@@ -58,16 +68,16 @@
   width: 90px !important;
   margin-bottom: 3rem !important;
   margin-left: 2rem;
-  background-color: #223547;
-  border-radius: 999px; }
+  margin-top: 3px; }
   @media screen and (max-width: 1600px) {
     .navbar__logo--img {
-      margin-top: 3rem; } }
+      margin-top: 3px; } }
   @media screen and (max-width: 1400px) {
     .navbar__logo--img {
-      margin-right: 0px;
-      width: 100px;
-      height: 100px; } }
+      margin-left: 40%;
+      margin-top: 3px;
+      height: 79px !important;
+      width: 80px !important; } }
   @media screen and (max-width: 600px) {
     .navbar__logo--img {
       display: none; } }
@@ -241,7 +251,7 @@
     .servicios-home .bg-uno:hover {
       transform: scale(1.1);
       transition: .5s ease;
-      padding-left: 3rem;
+      padding-left: 1rem;
       border: 3px solid #ffffff;
       z-index: 9; }
     .servicios-home .bg-uno .serv-text {
@@ -394,6 +404,9 @@ footer div a {
 .titulo-amarillo {
   color: #FDD04B !important;
   font-size: 1.5rem; }
+  @media screen and (max-width: 600px) {
+    .titulo-amarillo {
+      font-size: 1rem; } }
 
 .text-secondary {
   font-size: 0.5rem;
@@ -421,105 +434,113 @@ footer div a {
 body {
   overflow-x: hidden; }
 
-.video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-attachment: fixed; }
-  .video .bg-card {
-    padding: 2rem;
-    text-align: start;
-    display: block;
-    position: absolute;
-    background-image: linear-gradient(150deg, #223547e5, #313941);
-    background-size: cover;
-    height: 40vh;
-    width: 25vw;
-    z-index: 9;
-    top: 50%;
-    left: 64%;
-    border-radius: 10px;
-    box-shadow: 8px 8px 10px -2px #141f2afd, -2px -5px 8px -1px #a9a8a8af; }
-    .video .bg-card:hover {
-      background-color: #363b41f6; }
-    @media screen and (max-width: 1600px) {
-      .video .bg-card {
-        height: 43vh;
-        width: 30vw;
-        top: 48%;
-        background-image: linear-gradient(150deg, #22354700, #31394100);
-        box-shadow: none;
-        top: 40%; }
-        .video .bg-card:hover {
-          background-color: #363b4100; } }
+#separador {
+  background-color: #e9e9e9;
+  border-bottom: 1px solid #d9d9d9;
+  color: #414141;
+  padding: 5vh 0;
+  text-align: center;
+  vertical-align: middle; }
+  @media screen and (max-width: 600px) {
+    #separador {
+      padding: 3vh 0; } }
+
+.bg-card {
+  padding: 2rem;
+  text-align: start;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(150deg, #223547e5, #313941);
+  background-size: cover;
+  height: 40vh;
+  width: 25vw;
+  z-index: 9;
+  top: 50%;
+  left: 64%;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px -2px #141f2afd, -2px -5px 8px -1px #a9a8a8af; }
+  .bg-card:hover {
+    background-color: #363b41f6; }
+  @media screen and (max-width: 1600px) {
+    .bg-card {
+      height: 43vh;
+      width: 30vw;
+      top: 48%;
+      background-image: linear-gradient(150deg, #22354700, #31394100);
+      box-shadow: none;
+      top: 40%; }
+      .bg-card:hover {
+        background-color: #363b4100; } }
+  @media screen and (max-width: 1400px) {
+    .bg-card {
+      height: 28vh;
+      background-image: linear-gradient(150deg, #22354700, #31394100);
+      box-shadow: none; }
+      .bg-card:hover {
+        background-color: #363b4100; } }
+  @media screen and (max-width: 600px) {
+    .bg-card {
+      background-image: linear-gradient(150deg, #22354700, #31394100);
+      box-shadow: none;
+      width: 150px;
+      top: 25%;
+      left: 38%; }
+      .bg-card:hover {
+        background-color: #363b4100; } }
+  .bg-card h3 {
+    font-size: 2rem;
+    margin: 10% auto 2%;
+    color: #ffffff; }
     @media screen and (max-width: 1400px) {
-      .video .bg-card {
-        height: 28vh;
-        background-image: linear-gradient(150deg, #22354700, #31394100);
-        box-shadow: none; }
-        .video .bg-card:hover {
-          background-color: #363b4100; } }
+      .bg-card h3 {
+        font-size: 1rem;
+        margin: 2% auto 2%; } }
     @media screen and (max-width: 600px) {
-      .video .bg-card {
-        background-image: linear-gradient(150deg, #22354700, #31394100);
-        box-shadow: none;
-        width: 150px;
-        left: 42%; }
-        .video .bg-card:hover {
-          background-color: #363b4100; } }
-    .video .bg-card h3 {
-      font-size: 2rem;
-      margin: 10% auto 2%;
-      color: #ffffff; }
-      @media screen and (max-width: 1600px) {
-        .video .bg-card h3 {
-          margin: 6% auto 2%; } }
-      @media screen and (max-width: 1400px) {
-        .video .bg-card h3 {
-          font-size: 1rem;
-          margin: 5% auto 2%; } }
-    .video .bg-card h4 {
-      font-size: 3rem;
-      margin: 10% auto 2%;
-      color: #FDD04B; }
-      @media screen and (max-width: 1400px) {
-        .video .bg-card h4 {
-          font-size: 1.5rem; } }
-    .video .bg-card .top2 {
-      width: 200px;
-      top: 60%;
-      left: 70%;
-      background-color: #e2dfdf;
-      color: #223547;
-      overflow: hidden;
-      opacity: 0.8;
-      transition: .5s;
-      box-shadow: 2px 4px 8px -1px #141f2afd, -2px -2px 7px -4px #e7e5de; }
-      .video .bg-card .top2:hover {
-        background-color: #FDD04B; }
-      .video .bg-card .top2::before {
-        content: 'Contactanos'; }
-      .video .bg-card .top2:hover::before {
-        display: none;
-        transition: .5s; }
-      .video .bg-card .top2:hover::after {
-        content: 'Click Aqui';
-        color: #ffffff;
-        transition: .5s; }
-      @media screen and (max-width: 1400px) {
-        .video .bg-card .top2 {
-          width: 170px; } }
-      @media screen and (max-width: 600px) {
-        .video .bg-card .top2 {
-          width: 130px;
-          font-size: 0.9rem; } }
-  .video .parallax-completo {
-    width: 100%;
-    background-attachment: fixed; }
+      .bg-card h3 {
+        font-size: 0.5rem;
+        margin: 1% auto 1%; } }
+  .bg-card h4 {
+    font-size: 3rem;
+    margin: 10% auto 2%;
+    color: #FDD04B; }
+    @media screen and (max-width: 1400px) {
+      .bg-card h4 {
+        font-size: 1.5rem; } }
+  .bg-card .top2 {
+    width: 200px;
+    top: 60%;
+    left: 70%;
+    background-color: #e2dfdf;
+    color: #223547;
+    overflow: hidden;
+    opacity: 0.8;
+    transition: .5s;
+    box-shadow: 2px 4px 8px -1px #141f2afd, -2px -2px 7px -4px #e7e5de; }
+    .bg-card .top2:hover {
+      background-color: #FDD04B; }
+    .bg-card .top2::before {
+      content: 'Contactanos'; }
+    .bg-card .top2:hover::before {
+      display: none;
+      transition: .5s; }
+    .bg-card .top2:hover::after {
+      content: 'Click Aqui';
+      color: #ffffff;
+      transition: .5s; }
+    @media screen and (max-width: 1400px) {
+      .bg-card .top2 {
+        width: 170px; } }
+    @media screen and (max-width: 600px) {
+      .bg-card .top2 {
+        width: 130px;
+        font-size: 0.9rem; } }
+
+.parallax-completo {
+  width: 100%;
+  background-attachment: fixed; }
 
 .sombra {
-  box-shadow: 1px 2px 10px -1px #141f2afd, -1px -1px 10px -4px #e7e5de;
-  z-index: 9; }
+  box-shadow: 1px 2px 10px -1px #141f2afd, -1px -1px 10px -4px #e7e5de; }
 
 .slider-texto {
   display: block;
@@ -536,3 +557,8 @@ body {
     .slider-texto {
       font-size: 2rem;
       top: 45%; } }
+
+@media screen and (max-width: 600px) {
+  .img-sizing {
+    width: 100%;
+    height: 20vh; } }
