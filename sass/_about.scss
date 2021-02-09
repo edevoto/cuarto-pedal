@@ -1,0 +1,13 @@
+@import "_colors";
+@import "_media-q";
+
+
+#about 
+{
+    line-height: 50px;
+    color: $azul;
+    h2, h3{
+        color: $amarillo;
+    }
+    
+} 

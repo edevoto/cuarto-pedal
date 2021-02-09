@@ -26,23 +26,26 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="sass/estios.css" />
+  <link rel="stylesheet" href="sass/_about.scss">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Taller de bicicletas - Servicio tecnico | Taller Cuarto Pedal</title>
-  
+
 </head>
 
-<body>
+<body id="about">
 
-      <!--Header-->
-      <!--Header-->
+  <!--Header-->
+  <!--Header-->
   <header class="row fixed-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark w-100 mt-0 sombra">
       <div class="container-fluid ps-0">
-       
+
         <a href="#"><img src="img/logo1.png" alt="Cuarto_Pedal" class="navbar__logo--img fixed-top" /></a>
 
-        <button class="navbar-toggler m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler m-0 p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -58,20 +61,21 @@
                 <span class="nav-text fst-italic">Sobre nosotros</span></a>
             </li>
             <li class="nav-item dropdown p-0 p-md-0">
-              <a class="nav-link fs-5 text-color-navbar" href="servicios.html" id="drowpdownServiciosLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link fs-5 text-color-navbar" href="servicios.html" id="drowpdownServiciosLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <span class=" nav-text fst-italic">Servicios</span></a>
 
-                  <ul class="dropdown-menu ms-5" aria-labelledby="drowpdownServiciosLink">
-                    <li>
-                      <a class="dropdown-item" href="servicios.html">Servicio Tecnico</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="servicios.html">Retiro y despacho a domicilio</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="servicios.html">Asesoria sobre bicicletas</a>
-                    </li>
-                  </ul>
+              <ul class="dropdown-menu ms-5" aria-labelledby="drowpdownServiciosLink">
+                <li>
+                  <a class="dropdown-item" href="servicios.html">Servicio Tecnico</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="servicios.html">Retiro y despacho a domicilio</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="servicios.html">Asesoria sobre bicicletas</a>
+                </li>
+              </ul>
 
             </li>
             <li class="nav-item p-0 p-md-0">
@@ -85,25 +89,35 @@
     </nav>
   </header>
 
-      <!--Main-->
-      <!--Main-->
+  <!--Main-->
+  <!--Main-->
   <main>
+    <div id="separador"></div>
+    <br>
+
     <div class="row">
-      <div class="col-8">
-        <img src="img/StockSnap2.jpg" alt="" />
+      <div class="col-9">
+        <img class="w-100 sombra" src="img/StockSnap2.jpg" alt="" />
       </div>
-      <div class="col-4">
-        <h2>Quienes Somos</h2>
+      <div class="col-md-3 mx-auto">
+        <h3>Quienes Somos</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          unde deleniti sunt provident vitae beatae optio debitis quod. Iusto,
-          voluptates perferendis non eligendi maxime quasi suscipit laboriosam
-          doloremque magni sint.
+          En cuarto pedal somos un equipo formado por dos hermanos, amantes de las bicicletas y el ciclismo en general.
+          Somos usuarios ciclistas y también corredores. <br>
+          Esta pasión la llevamos en la sangre, la cual impregnamos en
+          nuestro trabajo, conociendo las fallas y molestias que se presentan a diario y las exigencias que se necesitan
+          para rodar al más alto nivel, así podemos entregar un servicio de la mejor calidad para que la experiencia de
+          nuestro cliente sea la mejor.
         </p>
       </div>
     </div>
+    <br>
     <div class="row">
-      <div class="col-4">
+      <div class="col-8">
+        <img class="w-100 h-auto" src="img/StockSnap1.jpg" alt="">
+      </div>
+      <div class="col-md-4 mx-auto">
+        <h3>Nos encantan las carreras</h3>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
           nemo assumenda impedit, dicta, ut eligendi harum nihil velit
@@ -111,19 +125,35 @@
           doloremque, delectus et ad incidunt.
         </p>
       </div>
+      
+    </div>
+    <br>
+    <div class="row">
       <div class="col-8">
-        <img src="img/StockSnap2.jpg" alt="">
+        <img class="w-100 h-auto sombra" src="img/StockSnap3.jpg" alt="">
       </div>
+      <div class="col-md-4 mx-auto">
+        <h3>Y cada dia mas bici</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+          nemo assumenda impedit, dicta, ut eligendi harum nihil velit
+          aspernatur laudantium reprehenderit modi. Perferendis ab qui
+          doloremque, delectus et ad incidunt.
+        </p>
+      </div>
+
+    </div>
+    <div class="row text-center p-5">
+      <h2 class="fs-1">NUESTRO EQUIPO</h2>
     </div>
     <div class="row">
-      <h4>NUESTRO STAFF</h4>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <img src="img/shimano.jpeg" alt="">
+      <div class="col-7 ms-4 me-5 t-5 mx-auto">
+        <img class="w-100" src="img/cristian.jpg" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, accusantium.</p>
       </div>
-      <div class="col-6">
-        <img src="img/sram.jpg" alt="">
+      <div class="col-12 ms-5 mx-auto">
+        <img class="w-100" src="img/nicolas.png" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, accusantium.</p>
       </div>
     </div>
   </main>

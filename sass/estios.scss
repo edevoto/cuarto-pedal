@@ -4,6 +4,7 @@
 @import "_servicios";
 @import "_blog";
 @import "_footer";
+@import "_about";
 $full-W: 100vw;
 
 * {
@@ -29,8 +30,9 @@ body {
     padding: 3vh 0;
   }
 }
-//hero Section css
 
+/**INDEX.HTML**/
+/**INDEX.HTML**/
   
   .bg-card{
     padding: 2rem;
@@ -177,3 +179,6 @@ body {
     height: 20vh;
   }
 }
+
+/**ABOUT.HTML**/
+
