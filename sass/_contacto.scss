@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 242, 242);
+}
+
+.contenedor-formulario {
+  height: 88vh;
+  width: 60%;
+  margin: 8rem 0 8rem 0;
+  background-color: $azul;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  box-shadow: 5px 8px 10px -1px gray;
+  display: flex;
+  flex-wrap: wrap;
+  @include web-small {
+    height: 105vh;
+  }
+  @include tablet {
+    width: 95%;
+    height: 110vh;
+  }
+  @include mobile {
+    width: 100%;
+    border-radius: 0;
+  }
+  &__datos-contacto {
+    padding: 3rem;
+    width: 35%;
+    flex-direction: column;
+    border-right: 3px solid $color;
+
+    &__titulogo {
+      align-items: center;
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+        color: $amarillo;
+        padding: 2rem;
+        @include tablet {
+          font-size: 1rem;
+          padding-left: 0;
+        }
+        @include mobile {
+          text-align: center;
+        }
+      }
+      .logo-contacto {
+        height: 100%;
+        width: 100%;
+      }
+     
+    }
+    &__datos{
+        justify-content: space-between;
+        align-items: center;
+        color: $color;
+        @include tablet {
+          font-size: 0.5rem;
+        }
+        .text{
+          font-size: 10px!important;
+          margin-right: 10px!important;
+        }
+        .fas{
+        color: $amarillo;
+        @include tablet{
+          font-size: 10px;
+          margin-left: 15px;
+        }
+    }
+    }
+  }
+  &__datos-cliente{
+      padding: 1rem;
+      width: 65%;
+      color: $color;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      &__titulo{
+          color: $amarillo;
+          padding-left: 3rem;
+          text-transform: uppercase;
+          @include tablet {
+            font-size: 0.5rem;
+          }
+          @include mobile {
+            font-size: 35px;
+          }
+      }
+      &__formulario{
+
+         flex-direction: column;
+         &__grupo-form{
+             padding: 0.5rem 0 0.5rem 3rem;
+             input{
+                 width: 80%;
+                 height: 60px;
+                 border-style: none;
+                 box-shadow: -1px -1px 5px grey, 2px 2px 10px rgb(61, 60, 60);
+                 padding-left: 15px ;
+                 @include tablet{
+                   height:  30px;
+                 }
+                 @include mobile {
+                  height: 30px;
+                 }
+             }
+             textarea{
+               width: 80%;
+                box-shadow: -1px -1px 5px grey, 2px 2px 10px rgb(76, 75, 75);
+                padding-left: 15px;
+                @include tablet {
+                  height: 100px;
+                }
+             }
+             button{
+                width: 80%;
+                &:hover{
+                    background-color: $amarillo;
+                    color: $color;
+                }
+             }
+         }
+      }
+  }
+}

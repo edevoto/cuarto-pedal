@@ -26,13 +26,13 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="sass/estios.css" />
-  <link rel="stylesheet" href="sass/_about.scss">
+  <link rel="stylesheet" href="sass/_contacto.scss">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Taller de bicicletas - Servicio tecnico | Taller Cuarto Pedal</title>
 
 </head>
 
-<body id="about">
+<body>
 
   <!--Header-->
   <!--Header-->
@@ -89,7 +89,70 @@
     </nav>
   </header>
 
-  <footer class="bg-azul text-white pt-3 pb-3 ">
+
+  <main>
+    <div id="separador"></div>
+    <br>
+
+    <div class="contenedor-formulario">
+      <div class="contenedor-formulario__datos-contacto">
+        <section class="contenedor-formulario__datos-contacto__titulogo">
+          <img class="logo-contacto" src="img/logo1.png" alt="logo_cuarto-pedal">
+          <h2>Datos de contacto</h2>
+
+        </section>
+        <section class="contenedor-formulario__datos-contacto__datos">
+          <p><i class="fas fa-envelope"></i><span class="text">cuartopedal@gmail.com</span></p>
+          <p><i class="fas fa-mobile-alt me-3"></i><span class="text">+569-33042883</span></p>
+        </section>
+      </div>
+
+      <div class="contenedor-formulario__datos-cliente">
+      <section class="contenedor-formulario__datos-cliente__titulo">
+        <h2>Ingrese sus datos</h2>
+      </section>
+      
+      <div class="contenedor-formulario__datos-cliente__formulario">
+        <form action="">
+          <div class="contenedor-formulario__datos-cliente__formulario__grupo-form">
+            <label for="Nombre">Nombre</label>
+            <br>
+            <input type="text" value="Nombre" name="Nombre" class="nombre">
+          </div>
+          <div class="contenedor-formulario__datos-cliente__formulario__grupo-form">
+            <label for="Telefono">Telefono</label>
+            <br>
+            <input type="text" value="Telefono" name="Telefono" class="Telefono">
+          </div>
+          <div class="contenedor-formulario__datos-cliente__formulario__grupo-form">
+            <label for="Correo">Correo</label>
+            <br>
+            <input type="text" value="Correo" name="Correo" class="Correo">
+          </div>
+          <div class="contenedor-formulario__datos-cliente__formulario__grupo-form">
+            <label for="textarea">Mensaje</label>
+            <br>
+            <textarea name="textarea" rows="5" cols="43">Escribe aqui</textarea>
+          </div>
+          <div class="contenedor-formulario__datos-cliente__formulario__grupo-form">
+            <button class="servicios-home--btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </main>
+
+
+  <footer class="bg-azul text-white pt-3 pb-3">
     <div class="container-fluid text-center text-md-left">
       <div class="row text-start text-md-left mt-md-5">
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-1 d-sm-none d-lg-block">

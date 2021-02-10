@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+#error{
+    min-height: 100vh;
+    background-image: linear-gradient( 85deg, #223547,   #3f5a72);
+}
+.contenedor{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    text-align: center;
+    color: $color;
+    h1{
+        font-size: 160px;
+        margin: 0;
+        font-weight: 900;
+        letter-spacing: 20px;
+        background-image: linear-gradient(125deg, $amarillo, #f7e5b0);
+        padding: 1rem 0;
+    }
+    h2{
+        padding: 2rem 0;
+    }
+    p{
+        padding: 2rem 0;
+    }
+    a{
+        background-color: $amarillo;
+        text-decoration: none;
+        color: $azul;
+        padding:10px;
+        border-radius: 7px;
+    }
+}

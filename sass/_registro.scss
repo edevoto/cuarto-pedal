@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 242, 242);
+}
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+  background-image: linear-gradient(85deg, #223547, #31475a);
+  width: 45vw;
+  height: 110vh;
+  padding-bottom: 5rem;
+  border-radius: 15px;
+  box-shadow: -2px -3px 5px #b5cadd, 4px 5px 10px #223547;
+  @include tablet-small {
+    padding-bottom: 2rem;
+  }
+  @include mobile {
+    padding-bottom: 0;
+    height: 85vh;
+  }
+  &__cabecera {
+    margin-top: 0px;
+    margin: 0 auto 5rem;
+    color: $amarillo;
+    text-transform: uppercase;
+    h1 {
+      @include mobile {
+        font-size: 1rem;
+      }
+    }
+
+    .img-logo {
+      margin: 0 0 2rem 38%;
+      height: 190px;
+      width: 190px;
+
+      @include tablet{
+        margin: 0 0 2rem 30%;
+        height: 90px;
+        width: 90px;
+      }
+      @include mobile {
+        margin: 0 0 0.5rem 15%;
+        height: 90px;
+        width: 90px;
+      }
+    }
+  }
+  &__datos-sesion {
+    display: flex;
+    flex-direction: column;
+
+    &__grupo-datos {
+      color: $color;
+      padding-bottom: 1rem;
+      @include tablet-small {
+        margin: 0 auto;
+      }
+      @include mobile {
+        margin: 0 auto;
+        font-size: 10px;
+      }
+
+      label {
+        @include tablet {
+          font-size: 0.5remrem;
+        }
+        @include tablet-small {
+          font-size: 1rem;
+        }
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+      input {
+        height: 60px;
+        width: 400px;
+        border-radius: 5px;
+
+        @include tablet {
+          width: 300px;
+        }
+
+        @include tablet-small {
+          width: 250px;
+        }
+
+        @include mobile {
+          width: 150px;
+          height: 30px;
+        }
+      }
+    }
+    &__grupo-boton {
+        
+      button {
+        width: 400px;
+        margin: 2rem auto;
+        background-image: linear-gradient(125deg, $amarillo, #f7e5b0);
+        &:hover {
+          color: $color;
+        }
+        @include tablet {
+          width: 300px;
+        }
+        @include tablet-small {
+          width: 250px;
+        }
+        @include mobile {
+          margin: 0 0 1rem 10%;
+          width: 150px;
+          font-size: 15px;
+        }
+      }
+    }
+    &__grupo-terms {
+      label {
+        color: $color;
+        font-size: 10px;
+      }
+      #reestablecer {
+        color: $azul;
+        font-size: 7px;
+        border-radius: 3px;
+        border: none;
+        padding: 5px;
+      }
+    }
+  }
+}
