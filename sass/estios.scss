@@ -180,5 +180,108 @@ body {
   }
 }
 
-/**ABOUT.HTML**/
+.servicios-home {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  height: 55vh;
+  color: $color;
+ display: flex;
+ flex-wrap: wrap;
+ position: static;
+ box-shadow: 2px 2px 10px -1px #141f2afd,
+ -1px -1px 7px -4px #e7e5de;
+
+  .bg-uno {
+      width: 33.3%;
+      background-image: url('../img/servi2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+   
+      &:hover{
+          transform: scale(1.1);
+          transition: .5s ease;
+          padding-left: 1rem;
+          border: 3px solid $color;
+          z-index: 9;
+      }
+      .serv-text {
+          color: $amarillo;
+          margin-top: 6rem;
+          text-decoration: underline;
+          text-shadow: 1px 1px  2px #312d2d;
+          @include tablet-small{
+              margin-top: 1rem;
+          }
+
+      }
+  }
+  .bg-dos {
+      
+      width: 33.3%;
+      background-image: url('../img/servi1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+      &:hover{
+         transition: .5s ease;
+          transform: scale(1.1);
+          border: 3px solid $color;
+          z-index: 9;
+      }
+      .serv-text {
+          color: $amarillo;
+          margin-top: 5.5rem;
+          text-decoration: underline;
+          text-shadow: 1px 1px  2px #312d2d;
+          
+          @include tablet-small{
+              margin-top: 1rem;
+          }
+      }
+  }
+  .bg-tres {
+      width: 33.3%;
+      background-image: url('../img/4p_van.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 0px;
+     
+      &:hover{
+          transition: .5s ease;
+          transform: scale(1.1);
+          border: 3px solid $color;
+          z-index: 9;
+      }
+      .serv-text {
+          color: $amarillo;
+          margin-top: 6rem;
+          text-decoration: underline;
+          text-shadow: 1px 1px  2px #312d2d;
+          @include tablet-small{
+              margin-top: 1rem;
+          }
+      }
+  }
+  
+
+
+
+  &--btn {
+                
+      padding: 12px;
+      color: $azul;
+      
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: $color;
+      
+      &:hover {
+          transition: all 0.2s ease ;
+          color: $amarillo;
+          box-shadow: 0.5px 0.5px 2px $color;
+      }
+  }
+}
 

@@ -82,83 +82,80 @@
     .navbar__logo--img {
       display: none; } }
 
-.servicios-home {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-right: 0px;
-  height: 55vh;
-  color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  position: static;
-  box-shadow: 2px 2px 10px -1px #141f2afd, -1px -1px 7px -4px #e7e5de; }
-  .servicios-home .bg-uno {
-    width: 33.3%;
-    background-image: url("../img/servi2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
-    .servicios-home .bg-uno:hover {
-      transform: scale(1.1);
-      transition: .5s ease;
-      padding-left: 1rem;
-      border: 3px solid #ffffff;
-      z-index: 9; }
-    .servicios-home .bg-uno .serv-text {
-      color: #FDD04B;
-      margin-top: 6rem;
-      text-decoration: underline;
-      text-shadow: 1px 1px  2px #312d2d; }
-      @media screen and (min-width: 768px) {
-        .servicios-home .bg-uno .serv-text {
-          margin-top: 1rem; } }
-  .servicios-home .bg-dos {
-    width: 33.3%;
-    background-image: url("../img/servi1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
-    .servicios-home .bg-dos:hover {
-      transition: .5s ease;
-      transform: scale(1.1);
-      border: 3px solid #ffffff;
-      z-index: 9; }
-    .servicios-home .bg-dos .serv-text {
-      color: #FDD04B;
-      margin-top: 5.5rem;
-      text-decoration: underline;
-      text-shadow: 1px 1px  2px #312d2d; }
-      @media screen and (min-width: 768px) {
-        .servicios-home .bg-dos .serv-text {
-          margin-top: 1rem; } }
-  .servicios-home .bg-tres {
-    width: 33.3%;
-    background-image: url("../img/4p_van.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: 0px; }
-    .servicios-home .bg-tres:hover {
-      transition: .5s ease;
-      transform: scale(1.1);
-      border: 3px solid #ffffff;
-      z-index: 9; }
-    .servicios-home .bg-tres .serv-text {
-      color: #FDD04B;
-      margin-top: 6rem;
-      text-decoration: underline;
-      text-shadow: 1px 1px  2px #312d2d; }
-      @media screen and (min-width: 768px) {
-        .servicios-home .bg-tres .serv-text {
-          margin-top: 1rem; } }
-  .servicios-home--btn {
-    padding: 12px;
-    color: #223547;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #ffffff; }
-    .servicios-home--btn:hover {
-      transition: all 0.2s ease;
-      color: #FDD04B;
-      box-shadow: 0.5px 0.5px 2px #ffffff; }
+#servicios .bg__servicios-uno {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/servi2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  #servicios .bg__servicios-uno .serv-text {
+    padding: 10rem;
+    color: #FDD04B;
+    margin-top: 6rem;
+    text-shadow: 1px 1px  2px #312d2d; }
+    #servicios .bg__servicios-uno .serv-text p {
+      color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      #servicios .bg__servicios-uno .serv-text {
+        padding: 3rem; } }
+    @media screen and (max-width: 600px) {
+      #servicios .bg__servicios-uno .serv-text {
+        padding: 3rem; } }
+
+#servicios .bg__servicios-dos {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/servi1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #servicios .bg__servicios-dos .serv-text {
+    padding: 10rem;
+    color: #FDD04B;
+    margin-top: 5.5rem;
+    text-shadow: 1px 1px  2px #312d2d; }
+    #servicios .bg__servicios-dos .serv-text p {
+      color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      #servicios .bg__servicios-dos .serv-text {
+        padding: 3rem; } }
+    @media screen and (max-width: 600px) {
+      #servicios .bg__servicios-dos .serv-text {
+        padding: 3rem; } }
+
+#servicios .bg__servicios-tres {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/4p_van.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 0px; }
+  #servicios .bg__servicios-tres .serv-text {
+    padding: 10rem;
+    color: #FDD04B;
+    margin-top: 6rem;
+    text-shadow: 1px 1px  2px #312d2d; }
+    #servicios .bg__servicios-tres .serv-text p {
+      color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      #servicios .bg__servicios-tres .serv-text {
+        padding: 3rem; } }
+    @media screen and (max-width: 600px) {
+      #servicios .bg__servicios-tres .serv-text {
+        padding: 3rem; } }
+
+#servicios--btn {
+  padding: 12px;
+  color: #223547;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ffffff; }
+  #servicios--btn:hover {
+    transition: all 0.2s ease;
+    color: #FDD04B;
+    box-shadow: 0.5px 0.5px 2px #ffffff; }
 
 .container {
   margin-top: 15px;
@@ -273,10 +270,72 @@ footer div a {
       display: none; } }
 
 #about {
-  line-height: 50px;
-  color: #223547; }
+  line-height: 30px;
+  color: #ffffff; }
   #about h2, #about h3 {
     color: #FDD04B; }
+  #about .text-one {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 16%; }
+    @media screen and (max-width: 1400px) {
+      #about .text-one {
+        top: 25%; }
+        #about .text-one p {
+          font-size: 1rem; } }
+    @media screen and (max-width: 600px) {
+      #about .text-one {
+        top: 15%; }
+        #about .text-one p {
+          font-size: 10px;
+          line-height: 20px; } }
+  #about .text-dos {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 45%; }
+    @media screen and (max-width: 1400px) {
+      #about .text-dos {
+        top: 25%; }
+        #about .text-dos p {
+          font-size: 1rem; } }
+    @media screen and (max-width: 600px) {
+      #about .text-dos {
+        top: 15%;
+        left: 15%; }
+        #about .text-dos h3 {
+          font-size: 15px; }
+        #about .text-dos p {
+          font-size: 10px;
+          line-height: 20px; } }
+  #about .text-tres {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 15%; }
+    @media screen and (max-width: 1400px) {
+      #about .text-tres {
+        top: 25%; }
+        #about .text-tres p {
+          font-size: 1rem; } }
+    @media screen and (max-width: 600px) {
+      #about .text-tres {
+        top: 25%;
+        left: 15%; }
+        #about .text-tres h3 {
+          font-size: 15px; }
+        #about .text-tres p {
+          font-size: 10px;
+          line-height: 20px; } }
+  #about .img-equipo {
+    width: 100%;
+    height: auto;
+    height: 735px !important; }
+  #about .text-bg {
+    background-image: linear-gradient(85deg, #223547, #31475a);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
 
 * {
   margin: 0;
@@ -420,4 +479,80 @@ body {
     width: 100%;
     height: 20vh; } }
 
-/**ABOUT.HTML**/
+.servicios-home {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  height: 55vh;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  position: static;
+  box-shadow: 2px 2px 10px -1px #141f2afd, -1px -1px 7px -4px #e7e5de; }
+  .servicios-home .bg-uno {
+    width: 33.3%;
+    background-image: url("../img/servi2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .servicios-home .bg-uno:hover {
+      transform: scale(1.1);
+      transition: .5s ease;
+      padding-left: 1rem;
+      border: 3px solid #ffffff;
+      z-index: 9; }
+    .servicios-home .bg-uno .serv-text {
+      color: #FDD04B;
+      margin-top: 6rem;
+      text-decoration: underline;
+      text-shadow: 1px 1px  2px #312d2d; }
+      @media screen and (min-width: 768px) {
+        .servicios-home .bg-uno .serv-text {
+          margin-top: 1rem; } }
+  .servicios-home .bg-dos {
+    width: 33.3%;
+    background-image: url("../img/servi1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .servicios-home .bg-dos:hover {
+      transition: .5s ease;
+      transform: scale(1.1);
+      border: 3px solid #ffffff;
+      z-index: 9; }
+    .servicios-home .bg-dos .serv-text {
+      color: #FDD04B;
+      margin-top: 5.5rem;
+      text-decoration: underline;
+      text-shadow: 1px 1px  2px #312d2d; }
+      @media screen and (min-width: 768px) {
+        .servicios-home .bg-dos .serv-text {
+          margin-top: 1rem; } }
+  .servicios-home .bg-tres {
+    width: 33.3%;
+    background-image: url("../img/4p_van.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0px; }
+    .servicios-home .bg-tres:hover {
+      transition: .5s ease;
+      transform: scale(1.1);
+      border: 3px solid #ffffff;
+      z-index: 9; }
+    .servicios-home .bg-tres .serv-text {
+      color: #FDD04B;
+      margin-top: 6rem;
+      text-decoration: underline;
+      text-shadow: 1px 1px  2px #312d2d; }
+      @media screen and (min-width: 768px) {
+        .servicios-home .bg-tres .serv-text {
+          margin-top: 1rem; } }
+  .servicios-home--btn {
+    padding: 12px;
+    color: #223547;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #ffffff; }
+    .servicios-home--btn:hover {
+      transition: all 0.2s ease;
+      color: #FDD04B;
+      box-shadow: 0.5px 0.5px 2px #ffffff; }
